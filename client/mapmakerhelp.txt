@@ -1,0 +1,25 @@
+You need PMW python megawidgets installed to use mapmaker.
+
+The map maker automatically saves everything you do as you go.  There is no undo.
+To add factions, put there names into the factions.list file in the factions folder.
+Same with governments and races. governments.list races.list in respective folders.
+
+White systems have no bodies (planets/space stations)  in them.
+Light blue systems have bodies, but none of them are populated.
+Dark blue system have populated bodies.
+
+CONTROLS
+
+left click to select a system for editing
+
+right click to select a system for linking the currently being edited system to
+
+ctrl + left click to drag a system around
+
+shift + right click to add a new system
+
+scroll wheel zooms in and out
+
+shift + scroll wheel to scroll horizontally
+
+ctrl + scroll wheel to scroll vertically

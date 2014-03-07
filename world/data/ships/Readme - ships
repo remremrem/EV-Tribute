@@ -1,0 +1,50 @@
+CIVILLIAN WARSHIP	Price: 6,500,000
+Speed - 30
+Acceleration - 50
+RPF - 4
+-----SPECS-----
+Turrets - 4
+Guns - 3
+FM - 400
+Cargo - 40
+Includes Reaper bay and 4 Reapers.
+
+CIVILLIAN FIGHTER	Price: 60,000
+Speed - 300
+Acceleration - 300
+RPF - 7
+-----SPECS-----
+Turrets - 0
+Guns - 4
+FM - 40
+Cargo - 5
+
+CIVILLIAN FREIGHTER	Pice: 80,000
+Speed - 60
+Acceleration - 70
+RPF - 5
+-----SPECS-----
+Turrets - 2
+Guns - 2
+FM - 75
+Cargo - 250
+
+REAPER		Price: 60,000
+Speed - 310
+Acceleration - 310
+RPF - .7
+-----SPECS-----
+Turrets - 0
+Guns - 4
+FM - 40
+Cargo - 0
+
+SHUTTLE CRAFT	Price: 10,000
+Speed - 150
+Acceleration - 150
+RPF - 6
+-----SPECS-----
+Turrets - 0
+Guns - 1
+FM - 20
+Cargo - 25

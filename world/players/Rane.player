@@ -1,0 +1,13 @@
+[player]
+[name]
+Rane
+[shipname]
+Platypus
+[shiptype]
+Civilian Fighter
+[speed]
+300
+[accel]
+300
+[rps]
+.8

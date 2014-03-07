@@ -1,0 +1,38 @@
+[system]
+[name]
+Fomalhaut
+[location]
+-5,13
+[links]
+Altair,Sol,Arcturus
+[asteroids]
+1
+[nebula]
+1
+[bodies]
+1
+[body]
+[name]
+Flappy
+[location]
+10,0
+[sprite]
+Flappy.png
+[dock]
+1
+[race]
+alien
+[faction]
+Fac2
+[government]
+Gov1
+[wealth]
+2000
+[population]
+100
+[tech level]
+0
+[description]
+A beautiful planet with lots of cheese.
+[end body]
+[end system]

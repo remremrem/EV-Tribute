@@ -1,0 +1,5 @@
+You must have the python programming language and rabbyt and pyglet installed to run this program.
+Once unzipped, browse to the directory this readme is in and execute "python game.py"
+
+version 0.0.5
+now with working "radar" display, and hyperjumping!

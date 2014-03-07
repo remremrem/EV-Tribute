@@ -1,0 +1,14 @@
+[system]
+[name]
+Phecda
+[location]
+-16,-20
+[links]
+Merak,Megrez,Capella
+[asteroids]
+1
+[nebula]
+1
+[bodies]
+1
+[end system]

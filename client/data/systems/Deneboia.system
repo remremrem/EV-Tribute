@@ -1,0 +1,38 @@
+[system]
+[name]
+Deneboia
+[location]
+23,-4
+[links]
+Sirius,Beta Pictoria
+[asteroids]
+1
+[nebula]
+1
+[bodies]
+1
+[body]
+[name]
+Denver
+[location]
+0,0
+[sprite]
+Denver.png
+[dock]
+0
+[race]
+alien
+[faction]
+Fac2
+[government]
+Gov2
+[wealth]
+0
+[population]
+117
+[tech level]
+0
+[description]
+A beautiful planet with lots of cheese.
+[end body]
+[end system]

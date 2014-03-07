@@ -1,0 +1,14 @@
+[system]
+[name]
+Arcturus
+[location]
+-9,23
+[links]
+,Altair,Fomalhaut,Al Nair,Achernar
+[asteroids]
+1
+[nebula]
+1
+[bodies]
+1
+[end system]

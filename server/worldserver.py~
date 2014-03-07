@@ -1,0 +1,34 @@
+import os,sys,time
+sys.path.append(os.path.split(sys.path[0])[0])
+from Net import *
+from servercache import *
+
+class WorldHandler(TCPServer):
+    def __init__(self):
+        TCPServer.__init__(self)
+        
+    def connect_func(self,sock,host,port):
+        print "World Server successfully connected to %s on port %s!" % (host,port)
+    def client_connect_func(self,sock,host,port,address):
+        print "The World, (ip: %s, code: %s) connected on port %s!" % (address[0],address[1],port)
+    def client_disconnect_func(self,sock,host,port,address):
+        print "The World, (ip: %s, code: %s) disconnected from port %s!" % (address[0],address[1],port)
+    def handle_data(self,data):
+        if data[0] == "update":
+            print "WORLD UPDATE"
+            self.send_data(None)
+            return None
+        elif data[0] == "sysdict":
+            print "SYSTEMS"
+            self.send_data(None)
+            return None
+        elif data[0] == "init":
+            print "INIT WORLD"
+            self.send_data(None)
+            return None
+def main():
+    server = ServerHandler()
+    server.connect("localhost",6317)
+    server.serve_forever()
+    server.quit()
+if __name__ == '__main__': main()

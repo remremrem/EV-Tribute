@@ -1,0 +1,30 @@
+[system]
+[name]
+Crumple
+[location]
+10,0
+[links]
+Flap,Sol
+[bodies]
+1
+[asteroids]
+1
+[body]
+[name]
+Crump
+[location]
+20,50
+[sprite]
+gstation.png
+[dock]
+1
+[race]
+human
+[faction]
+rebel
+[wealth]
+2000
+[population]
+100
+[end body]
+[end system]

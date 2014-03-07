@@ -1,0 +1,14 @@
+[system]
+[name]
+Megrez
+[location]
+-21,-15
+[links]
+Mizar,Phecda,Alloth
+[asteroids]
+1
+[nebula]
+1
+[bodies]
+1
+[end system]

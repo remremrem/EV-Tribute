@@ -1,0 +1,89 @@
+[mission]    #signifies the beginning of a mission file
+[idnum]      #mission files are named in the format "job1.mis" where "1" is the idnum and "job" should be something that describes the mission.
+1              #if the mission is part of a mission string the  idnum becomes "1a" or "1c" or wherever it is in the string
+
+[filename]   #The name of this file.  text is case sensitive
+protomission1.mis
+
+[title]      #The title of the mission as it will be displayed to the player in game
+Delivery to Somewhere
+
+[mtype]      #the type of pre-scripting to use. check mtypes.list for all mtypes.
+deliver
+
+[agency]     #what corporation, government, or other party is this mission being carried out for. see agency.list.
+independent
+
+[source]     #where and who offers the mission. "0,name". "0" if it is the mission computer.  "1" if it is in the bar.  "2" if it is another ship.
+0,0
+
+[description]  #if source is the mission computer type the mission description as the player will see.  Use keywords for dates and random values
+Deliver [amount] tons of [cargo] to [finish] before [time] have passed.
+
+[start]      #Where you want this mission to be available. This can be a specific list of "(systems,ports)" or
+(anyport)       #it can be within a defined agencies territory or any random port if "(anyport)".
+
+[finish]     #see "[start]". The list of systems,ports should be in the format "(system,port1,port2)(system,port1)".
+(anyport)       #This can be systems without ports if the mission is not one that requires docking i.e  (system1),(system2),(system3)
+
+[time]       #"20,1" where "20" is the mission time limit and "1" indicates that the game may adjust the limit.
+15,1           #"0,0" would indicate that there is no time limit, and the game cannot adjust it.
+
+[cargo]      #0 for no cargo otherwise name the cargo.  use "auto" if you want the game to pick the cargo
+auto
+
+[camount]     #how many tons of cargo in the form "20,1" where "20" is the tonnage and "1" means that the game can adjust the tonnage. 
+18,1           #"0" means it is always "20" tons.
+
+[passengers] #does this mission include passengers or personnel 0=no. 1=passengers, 2=personnel
+0              #passengers take up 1 set of living quarters per 3 while personnel can squeeze in 10 per living quarters
+
+[pamount]     #"5,1"  where "5" is the average number of passenger and "1" means the game can adjust the number. "0" means it is always "5" passengers.
+0
+
+[target]     #1 = yes there is a target in this mission. 0 = no.
+0
+
+[tname]       #if there is a target, this is the name of the target's ship
+0
+
+[tsystem]     #if there is a target this is the list of systems the target might be located in
+0
+
+[shiptype]   #if there is a target this is the type of ship they are occupying 
+0
+
+[escorts]    #if the target has escorts this is a list of shiptypes that are escorting the target i.e "attacker,attacker,gunship"
+0
+
+[objective]  #if there is a target, this is the player's objective. possibilities are: kill, board, locate, speak, disable
+0
+
+[payout]     #two values in the form "10000,1" where "10000" is the payout at 3 jumps and "1" means
+20000,1        #that the payout will change as jumps and tonnage do, but 0 means the payout is always the same.
+
+[string]     #is this mission a part of a string 0=no 1=yes
+0
+
+[stringfile] #if this mission is part of string what is the .string file named.  should share a filename with "job1a.mis" i.e "job1.string"
+0
+
+[dialogues] #dialogues should be listed in the order they appear in this format 
+0              #"proposal(text), deny(text), accept(text), finish(text)" 
+
+
+
+# REMEMBER:  All fields are case sensitive.
+
+#Every field keyword can be substituted as text in mission text or titles 
+#i.e. "Deliver [amount] tons of [cargo] to [finish] before [time] have passed." would output something like
+#"Deliver 15 tons of Spices to Earth in the Sol system before 12 galactic time units have passed".
+
+#a [dialogues] entry might look like this
+#proposal(Hey aren't you the captain of the [player ship]? We are really over capacity and could use a hand moving a group of scientists to [end]. What do you say?), deny(That's too bad.  Take care of yourself out there.), accept(Great! Our personnel will board your ship right away. Get our scientists to [finish] on time and our shipping department might have more work for you.), finish(The scientists disembark from the [player ship] with a few indifferent "Thank you's". Scientists; always more interested in their projects than other people. At least they kept themselves occupied for the entire trip.  Those are the kind of passengers that any captain looks forward to having.| Some dude with a personnel manifest catches your attention before you seal the [player ship]'s airlock.| Captain [player name] I presume? My department manager would like to talk to you about more work. She'll be in O'Hares for a while longer. You can't miss her, there isn't another lady on this hunk of metal.) 
+
+#you'll notice the | character. This denotes that the next paragraph should appear in a new dialogue box.
+
+#besides the keywords defined in the .mis file the following keywords are also useful in dialogue boxes and other text areas that will be presented to the player
+
+#[player name] [player ship] [date] [deadline] [finish port] [finish system] [begin port] [begin system] [finish bar] [begin bar] [target name] 

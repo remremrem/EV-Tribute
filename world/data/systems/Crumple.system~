@@ -1,0 +1,30 @@
+[system]
+[name]
+Flap
+[location]
+15,8
+[links]
+Crumple,Sol
+[bodies]
+2
+[asteroids]
+1
+[body]
+[name]
+Flappy
+[location]
+10,0
+[sprite]
+luna.png
+[dock]
+1
+[race]
+human
+[faction]
+rebel
+[wealth]
+2000
+[population]
+100
+[end body]
+[end system]

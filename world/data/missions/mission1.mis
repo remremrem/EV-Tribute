@@ -1,0 +1,13 @@
+ [mission] #signifies the beginning of a mission file
+[idnum] #every mission file is named in the format mission1.mis  where 1 is the mission idnum.
+1
+[title] #mission title takes on the format "Delivery to"  which will be followed in game by the end location, specified with the [end] tag. 
+Prototype Mission
+[mtype] #is this a bounty, a spy mission, a delivery, a human transport, etc. check mtypes.list for all mtypes.
+delivery to
+[agency] #what corporation, government, or other party is this mission being carried out for. see agency.list.
+independent
+[begin] #this can be a specific list of systems or it can be within a defined agencies territory or anywhere at all if "anywhere".
+anywhere
+[end] #see [begin]
+

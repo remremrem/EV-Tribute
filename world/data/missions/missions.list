@@ -1,0 +1,6 @@
+#missions.list is the file that lists all the missions and mission strings to load at run time.  
+#If a mission isnt listed in this file, then it isnt in the game
+#Missions that are part of a string should not be listed here, just the .string file
+
+1 protomission1.mis
+2 teststring2.string

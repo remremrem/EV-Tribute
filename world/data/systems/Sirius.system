@@ -1,0 +1,14 @@
+[system]
+[name]
+Sirius
+[location]
+8,-1
+[links]
+Procyon,Alpha Centauri,Deneboia
+[asteroids]
+1
+[nebula]
+1
+[bodies]
+1
+[end system]

@@ -1,0 +1,53 @@
+import pyglet
+import rabbyt
+from pyglet.window import key
+from pyglet.window import mouse
+from pyglet.gl import *
+import tools
+
+class Other:
+    def __init__(self,window,panel):
+        self.name = "player"
+        self.sprite = rabbyt.Sprite(texture = "data/ships/reaper2.png")
+        self.sprite.xy = ((window[0]-panel[0])/2, window[1]/2)
+        self.speed = 300
+        self.accel = 300
+        self.velocity = 0
+        self.movement = 0
+        self.pos = [0, 0]
+        self.net_pos = 0
+        self.pos_time = 0
+        self.rps = .8
+        self.rot = 0
+        self.rot_step = 1
+        self.rot_time = 0
+        self.direction = 0
+        self.heading = 0
+        self.isfiring = 0
+        self.isfiring2 = 0
+        self.ping = 100
+        
+        
+    def draw(self,player,visible_size,ping,name):
+        if self.net_pos != 0:
+            #print "NET_POS"+str(self.net_pos)
+            #if self.name > name:
+                 #self.pos = tools.CalcOtherPosPlus(self,ping)
+            #    print "PLUS" + str(self.pos)
+            #else:
+            #    self.pos = tools.CalcOtherPosMinus(self,ping)
+            #    print "MINUS" + str(self.pos)
+            #self.pos = self.net_pos
+            #print "NET_POS: " + str(self.net_pos)
+            #print "OTHER POS: " +str(self.pos)
+            #self.pos = tools.CalcOtherPosPlus(self,ping)
+            self.pos = self.net_pos
+            self.net_pos = 0
+            #print "SPRITE POS: " + str(self.sprite.xy)
+        position = tools.CalcOtherPos(player,self,visible_size)
+        self.sprite.xy = position
+        self.sprite.rot = self.rot
+        if position == (1000,1000):
+            return None
+        else:
+            return self.sprite

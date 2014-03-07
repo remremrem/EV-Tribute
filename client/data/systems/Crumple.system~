@@ -1,0 +1,38 @@
+[system]
+[name]
+Crumple
+[location]
+26,23
+[links]
+Flap,Sol
+[asteroids]
+0
+[nebula]
+0
+[bodies]
+1
+[body]
+[name]
+Crump
+[location]
+0,0
+[sprite]
+Crump.png
+[dock]
+1
+[race]
+alien
+[faction]
+Fac2
+[government]
+Gov2
+[wealth]
+2000
+[population]
+0
+[tech level]
+0
+[description]
+
+[end body]
+[end system]

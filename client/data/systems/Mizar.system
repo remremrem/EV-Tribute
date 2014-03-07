@@ -1,0 +1,14 @@
+[system]
+[name]
+Mizar
+[location]
+-18,-7
+[links]
+Sol,Megrez
+[asteroids]
+1
+[nebula]
+1
+[bodies]
+1
+[end system]

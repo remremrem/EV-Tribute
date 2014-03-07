@@ -1,0 +1,24 @@
+[name]
+Sam
+[password]
+tribe
+[ship name]
+The Tractor
+[ship type]
+civfighter
+[speed]
+250
+[accel]
+200
+[currency]
+10000
+[escorts]
+0
+[combat rating]
+0
+[trade rating]
+0
+[allies]
+humans:100,traders:100
+[enemies]
+pirates:-100,aliens:-100

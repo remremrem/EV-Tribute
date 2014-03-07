@@ -1,0 +1,14 @@
+[system]
+[name]
+Atria
+[location]
+21,42
+[links]
+Achernar,Al Nair
+[asteroids]
+1
+[nebula]
+1
+[bodies]
+1
+[end system]

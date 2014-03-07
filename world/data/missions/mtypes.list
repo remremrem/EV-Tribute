@@ -1,0 +1,12 @@
+#mtypes. this file lists the different pre-scripted mission types ("custom" is the only mtype with no scripting)
+destroy   #a mission that requires you to destroy a specific ship or list of ships
+deliver   #a mission that requires you to take a specific something to a specific somewhere
+ferry     #a mission that requires you to take any number of people to a specific location
+dock      #a mission that requires you to simply dock at a specific port or non-port landing area i.e. abandoned station/uninhabited planet
+visit     #a mission that requires you to simply travel to a specified system
+rendevous #a mission that requires you to meet up with a specific ship in a specific system
+disable   #a mission that requires you to disable a specific ship
+board     #a mission that requires you to board a specific ship
+locate    #a mission that requires you to locate a specific ship and lock sensors on to it
+patrol    #a mission that requires you to spend a certain amount of time in a specific area
+custom    #a mission that has no prescripting.  the server will try to figure out how the mission is to proceed

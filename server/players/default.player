@@ -1,0 +1,25 @@
+[name]
+Guest
+[password]
+password
+[ship name]
+Flying Fairy Farts
+[ship type]
+civilian shuttlecraft
+[outfit]
+0
+[currency]
+10000
+[escorts]
+0
+[combat rating]
+0
+[trade rating]
+0
+[reputation]
+humans:100,traders:100,pirates:-100,aliens:-100
+[system]
+Sol
+[port]
+Earth
+

@@ -1,0 +1,14 @@
+[system]
+[name]
+Alpha Centauri
+[location]
+4,7
+[links]
+Sol,Fomalhaut,Sirius
+[asteroids]
+1
+[nebula]
+1
+[bodies]
+1
+[end system]

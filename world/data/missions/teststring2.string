@@ -1,0 +1,24 @@
+[mstring] #this line tells us that this is a mission string file
+[idnum]   #the idnum for the .string file should be the same for all the
+2           #.mis files in the string, but .mis files should have a letter after the number
+
+[filename] #the name of this file
+teststring2.string
+
+[title]
+Mission String Prototype
+
+[missions] # this is a list of all the .mis files in the mission string
+string2a.mis,string2b.mis,string2c.mis
+
+#the mission string starts when the player picks up the fist mission i.e. string2a.mis
+
+#missions strings are a great way to carry out complicated missions.  
+Suppose a player's mission is to go somewhere, pick up a package, 
+deliver it to a ship somewhere but they find the ship disabled and about to be destroyed. 
+As they witness its destruction, the attacking ship hails them and tells them to take the package to another location 
+where they are required to visit the bar before finally completing the mission.  
+This is far too complex a scenario to be contained in one mission.  
+The solution is to create a mission string consisting of a mission to go pick up the package, 
+a mission to take it to the ship, a mission to take it to the third location's bar.  
+To the player this can seem like 1 mission, but really it is 3 missions with a payout on the third mission.
